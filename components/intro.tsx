@@ -10,7 +10,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   return (
-    <main className="flex sm:flex-row flex-col sm:items-center items-center justify-center text-left h-screen">
+    <main
+      className="flex sm:flex-row flex-col sm:items-center
+    items-center justify-center text-left h-screen sm:px-96"
+    >
       <section className="sm:order-last">
         <motion.div
           className="relative flex items-center justify-center"
@@ -43,8 +46,8 @@ export default function Intro() {
           <h1 className=" mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl mg">
             <span className="font-bold">Juan María</span>
           </h1>
-          <h1 className="mb-10  px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
-            <span className="">Desarrollador de software.</span>
+          <h1 className="mb-10  px-4 text-base font-normal !leading-[1.5] sm:text-4xl">
+            <span className="">Desarrollador de software</span>
           </h1>
         </motion.div>
 
