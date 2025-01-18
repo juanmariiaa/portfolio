@@ -12,7 +12,7 @@ export default function Intro() {
   return (
     <main
       className="flex sm:flex-row flex-col sm:items-center
-    items-center justify-center text-left h-screen sm:px-96"
+    items-center justify-center text-left h-screen sm:max-w-screen-lg "
     >
       <section className="sm:order-last">
         <motion.div
@@ -43,10 +43,10 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className=" mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl mg">
+          <h1 className=" mt-4 px-4 text-4xl font-medium !leading-[1.5] sm:text-4xl mg">
             <span className="font-bold">Juan María</span>
           </h1>
-          <h1 className="mb-10  px-4 text-base font-normal !leading-[1.5] sm:text-4xl">
+          <h1 className="mb-10  px-4 font-normal text-medium  !leading-[1.5] sm:text-4xl">
             <span className="">Desarrollador de software</span>
           </h1>
         </motion.div>
@@ -63,7 +63,7 @@ export default function Intro() {
             <Link
               href="#contact"
               className="bg-gray-900 text-white px-7 py-3 mb-1 sm:mb-0 sm:mr-1.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-              onClick={() => {}}
+              onClick={() => { }}
             >
               Contáctame aquí{" "}
               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
