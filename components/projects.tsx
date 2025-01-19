@@ -4,32 +4,32 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0">
+    <section
+      id="projects"
+      className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
+    >
       <h2 className="text-3xl text-left font-medium">Proyectos</h2>
       <div>
-        {
-          projectsData.map((project, index) => (
-            <React.Fragment key={index}>
-              <Project {...project} />
-            </React.Fragment>
-          ))
-        }
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
       </div>
     </section>
   );
 }
 
-type ProjectProps = typeof projectsData[number];
+type ProjectProps = (typeof projectsData)[number];
 
-function Project({
-  title,
-  description,
-  tags,
-  imageUrl }
-  : ProjectProps) {
+function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
-
-    <section className="bg-gray-100 max-w-screen-lg border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+    <section
+      className="bg-gray-100 max-w-screen-lg border border-black/5
+     rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200
+      transition sm:group-even:pl-8 dark:text-white dark:bg-white/10
+         dark:hover:bg-white/20 mb-5"
+    >
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -47,7 +47,8 @@ function Project({
         </ul>
       </div>
 
-      <Image src={imageUrl}
+      <Image
+        src={imageUrl}
         alt={title}
         quality={95}
         className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
@@ -63,8 +64,6 @@ function Project({
 
         group-even:right-[initial] group-even:-left-40"
       />
-
     </section>
-  )
-
+  );
 }

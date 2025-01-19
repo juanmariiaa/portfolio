@@ -2,7 +2,10 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0">
+    <section
+      id="about"
+      className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
+    >
       <h2 className="text-3xl text-left font-medium">Sobre mí</h2>
       <p className="mt-4">
         Soy Juan María Ariza Serrano, desarrollador de software en formación. Me

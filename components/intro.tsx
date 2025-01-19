@@ -11,8 +11,9 @@ import { FaGithubSquare } from "react-icons/fa";
 export default function Intro() {
   return (
     <main
+      id="home"
       className="flex sm:flex-row flex-col sm:items-center
-    items-center justify-center text-left h-screen sm:max-w-screen-lg "
+    items-center justify-center text-left h-screen sm:max-w-screen-lg scroll-mt-96"
     >
       <section className="sm:order-last">
         <motion.div
@@ -63,7 +64,7 @@ export default function Intro() {
             <Link
               href="#contact"
               className="bg-gray-900 text-white px-7 py-3 mb-1 sm:mb-0 sm:mr-1.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-              onClick={() => { }}
+              onClick={() => {}}
             >
               Contáctame aquí{" "}
               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
