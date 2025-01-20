@@ -39,16 +39,16 @@ export default function Intro() {
             duration: 0.2,
           }}
         >
-          <Image
-            src="/picture.jpeg"
-            alt="Foto de Juan María"
-            width="192"
-            height="192"
-            quality="95"
-            priority={true}
-            className="h-28 w-28 sm:h-48 sm:w-48 rounded-full object-cover 
-          border-[0.25rem] border-white shadow-xl"
-          />
+          <div className="w-40 h-40 sm:w-80 sm:h-80 flex items-center justify-center shadow-xl rounded-lg">
+            <Image
+              src="/picture.jpeg"
+              alt="Foto de Juan María"
+              fill={true} // {true} | {false}
+              quality="100"
+              priority={true}
+              className="h-2 w-2 object-cover rounded-lg"
+            />
+          </div>
         </motion.div>
       </section>
 
@@ -85,7 +85,7 @@ export default function Intro() {
             </Link>
 
             <a
-              className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              className="px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack bg-white/10"
               href="/CV.pdf"
               download
             >
@@ -96,7 +96,7 @@ export default function Intro() {
 
           <div className="flex flex-row">
             <a
-              className="bg-white p-4 mr-1.5 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="p-4 mr-1.5 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack bg-white/10 text-white/60"
               href="https://www.linkedin.com/in/juan-maría-ariza-serrano"
               target="_blank"
             >
@@ -104,7 +104,7 @@ export default function Intro() {
             </a>
 
             <a
-              className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              className="p-4 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack bg-white/10 text-white/60"
               href="https://github.com/juanmariiaa"
               target="_blank"
             >
