@@ -8,6 +8,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 export default function Experiencie() {
   const { ref, inView } = useInView({
@@ -32,30 +33,37 @@ export default function Experiencie() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={true}
               contentStyle={{
-                background: "blue",
-                boxShadow: "none",
+                background: "rgb(255 255 255 / 0.1)", // Fondo con opacidad // dark:c dark:text-white/80
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Sombra
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
+                color: "#e1dfe2",
+              }}
+              contentArrowStyle={{
+                borderRight: "0.4rem solid rgb(255 255 255 / 0.1)", // Flecha con opacidad
               }}
               date={item.date}
+              dateClassName="sm:text-secondary sm:m-4 sm:mt-0"
               icon={item.icon}
               iconStyle={{
-                background: "blue",
-                fontSize: "1.5rem",
+                background: "#32385f",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <h3 className="font-semibold capitalize text-secondary">
+                {item.title}
+              </h3>
+              <p className="font-normal !mt-0 text-secondary">
+                {item.location}
+              </p>
+              <p className="!mt-1 !font-normal text-secondary">
                 {item.description}
               </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
-      </VerticalTimeline>
+      </VerticalTimeline>{" "}
     </section>
   );
 }
