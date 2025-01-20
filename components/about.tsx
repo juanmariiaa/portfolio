@@ -1,9 +1,24 @@
-import React from "react";
+"use client";
+
+import { useActiveSectionContext } from "@/context/active-section-context";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function About() {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView && timeOfLastClick < Date.now() - 1000) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <section
+      ref={ref}
       id="about"
       className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >

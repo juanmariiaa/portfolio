@@ -1,14 +1,30 @@
+"use client";
+
 import { projectsData } from "@/lib/data";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Projects() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView && timeOfLastClick < Date.now() - 1000) {
+      setActiveSection("Projects");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
+
   return (
     <section
+      ref={ref}
       id="projects"
       className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
-      <h2 className="text-3xl text-left font-medium">Proyectos</h2>
+      <h2 className="text-3xl text-left font-medium mb-3">Proyectos</h2>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
