@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills() {
+export default function Tecnologies() {
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
