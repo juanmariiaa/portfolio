@@ -18,14 +18,14 @@ export default function Experiencie() {
 
   useEffect(() => {
     if (inView && timeOfLastClick < Date.now() - 1000) {
-      setActiveSection("Experience");
+      setActiveSection("Experiencia");
     }
   }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <section
       ref={ref}
-      id="experience"
+      id="experiencia"
       className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
       <h2 className="text-3xl text-left font-medium">Mi experiencia</h2>
@@ -45,19 +45,17 @@ export default function Experiencie() {
                 borderRight: "0.4rem solid rgb(255 255 255 / 0.1)", // Flecha con opacidad
               }}
               date={item.date}
-              dateClassName="sm:text-secondary sm:m-4 sm:mt-0"
+              dateClassName="sm:text-white sm:m-4 sm:mt-0"
               icon={item.icon}
               iconStyle={{
-                background: "#27374D",
+                background: "#35374B",
               }}
             >
-              <h3 className="font-semibold capitalize text-secondary">
+              <h3 className="font-semibold capitalize text-white">
                 {item.title}
               </h3>
-              <p className="font-normal !mt-0 text-secondary">
-                {item.location}
-              </p>
-              <p className="!mt-1 !font-normal text-secondary">
+              <p className="font-normal !mt-0 text-white">{item.location}</p>
+              <p className="!mt-1 !font-normal text-white">
                 {item.description}
               </p>
             </VerticalTimelineElement>

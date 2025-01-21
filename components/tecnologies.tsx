@@ -28,14 +28,14 @@ export default function Tecnologies() {
 
   useEffect(() => {
     if (inView && timeOfLastClick < Date.now() - 1000) {
-      setActiveSection("Skills");
+      setActiveSection("Tecnologías");
     }
   }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <section
       ref={ref}
-      id="skills"
+      id="tecnologias"
       className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
       <h2 className="text-3xl text-left font-medium mb-3">Tecnologías</h2>

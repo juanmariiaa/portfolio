@@ -1,7 +1,7 @@
-import picture from "@/public/picture.jpeg";
+import plataformas from "@/public/picture.jpeg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaJava, FaReact, FaUnity } from "react-icons/fa";
+import { FaJava, FaUnity } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { LuGraduationCap } from "react-icons/lu";
 import {
@@ -20,28 +20,28 @@ import {
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: "Inicio",
+    hash: "#inicio",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Sobre mi",
+    hash: "#sobre-mi",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Proyectos",
+    hash: "#proyectos",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "Tecnologías",
+    hash: "#tecnologias",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Experiencia",
+    hash: "#experiencia",
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Contacto",
+    hash: "#contacto",
   },
 ] as const;
 
@@ -50,11 +50,8 @@ export const projectsData = [
     title: "Plataformas 2D",
     description:
       "Se trata de un videojuego de plataformas desarrollado en Unity y C#. El juego cuenta con 2 niveles con una dificultad fácil. Este proyecto me permitió aprender y aplicar conceptos clave del desarrollo de videojuegos.",
-    tags: [
-      { name: "Unity", icon: FaUnity },
-      { name: "C#", icon: FaUnity },
-    ],
-    imageUrl: picture,
+    tags: [{ name: "Unity", icon: FaUnity }, { name: "C#" }],
+    imageUrl: plataformas,
   },
 ] as const;
 
@@ -76,30 +73,21 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    company: "Ironhack",
-    location: "Miami, FL",
+    title: "Asesor comercial",
+    company: "Varias empresas",
+    location: "Córdoba, España",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+      "Aprendí a adaptarme constantemente para lograr el éxito debido al entorno dinámico y competitivo que caracteriza este sector.",
+    icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    company: "Ironhack",
-    location: "Orlando, FL",
+    title: "Tesorero y formador",
+    company: "CDU Debate",
+    location: "Córdoba, España",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
+      "Ser parte de la junta directiva de CDU me permitió desarrollar habilidades en la gestión y organización de actividades, como torneos nacionales y escolares, y formaciones de oratoria. Además, liderar equipos y coordinar proyectos fortaleció mis soft skills, que considero una parte imprescindible para progresar profesionalmente.",
+    icon: React.createElement(LuGraduationCap),
     date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "Ironhack",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
   },
 ] as const;

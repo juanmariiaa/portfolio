@@ -14,18 +14,17 @@ export default function Projects() {
 
   useEffect(() => {
     if (inView && timeOfLastClick < Date.now() - 1000) {
-      setActiveSection("Projects");
+      setActiveSection("Proyectos");
     }
   }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <section
       ref={ref}
-      id="projects"
+      id="proyectos"
       className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
-
-      <h2 className="text-3xl text-left font-medium mb-3">Proyectos</h2>
+      <h2 className="text-3xl text-left mt- font-medium mb-3">Proyectos</h2>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
@@ -60,7 +59,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70 flex items-center space-x-2"
                 key={index}
               >
-                <IconComponent className="mr-1" />
+                {IconComponent && <IconComponent className="mr-1" />}
                 <span>{tag.name}</span>
               </li>
             );

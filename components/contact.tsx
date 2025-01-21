@@ -12,14 +12,14 @@ export default function Contact() {
 
   useEffect(() => {
     if (inView && timeOfLastClick < Date.now() - 1000) {
-      setActiveSection("Contact");
+      setActiveSection("Contacto");
     }
   }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <section
       ref={ref}
-      id="contact"
+      id="contacto"
       className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
       <h2 className="text-3xl text-left font-medium">Contacto</h2>
@@ -44,7 +44,7 @@ export default function Contact() {
         <button
           type="submit"
           className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] 
-           text-secondary rounded-full outline-none transition-all focus:scale-110 hover:scale-110
+           text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110
            active:scale-105 bg-gray-950 disabled:scale-100 
             disabled:bg-opacity-65"
         >
