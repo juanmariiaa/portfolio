@@ -24,6 +24,7 @@ export default function Projects() {
       id="projects"
       className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
+
       <h2 className="text-3xl text-left font-medium mb-3">Proyectos</h2>
       <div>
         {projectsData.map((project, index) => (

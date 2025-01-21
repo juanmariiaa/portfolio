@@ -48,7 +48,7 @@ export default function Experiencie() {
               dateClassName="sm:text-secondary sm:m-4 sm:mt-0"
               icon={item.icon}
               iconStyle={{
-                background: "#32385f",
+                background: "#27374D",
               }}
             >
               <h3 className="font-semibold capitalize text-secondary">

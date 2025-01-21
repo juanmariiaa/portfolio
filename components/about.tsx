@@ -20,7 +20,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
+      className="max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
       <h2 className="text-3xl text-left font-medium">Sobre mí</h2>
       <p className="mt-4">
@@ -35,6 +35,19 @@ export default function About() {
         habilidades valiosas como la resolución de problemas, gestión del tiempo
         y formación de alumnos.{" "}
       </p>
+      <div className="w-screen absolute  left-0">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="w-full h-16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 40 Q 60 10 120 40 T 240 40 T 360 40 T 480 40 T 600 40 T 720 40 T 840 40 T 960 40 T 1080 40 T 1200 40 V 120 H 0 Z"
+            fill="#35374B"
+          />
+        </svg>
+      </div>
     </section>
   );
 }

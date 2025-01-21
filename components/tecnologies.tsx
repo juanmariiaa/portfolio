@@ -36,7 +36,7 @@ export default function Tecnologies() {
     <section
       ref={ref}
       id="skills"
-      className="mb-28 max-w-screen-md scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-screen-md text-justify leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
       <h2 className="text-3xl text-left font-medium mb-3">Tecnologías</h2>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
