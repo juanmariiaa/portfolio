@@ -50,7 +50,10 @@ export const projectsData = [
     title: "Plataformas 2D",
     description:
       "Se trata de un videojuego de plataformas desarrollado en Unity y C#. El juego cuenta con 2 niveles con una dificultad fácil. Este proyecto me permitió aprender y aplicar conceptos clave del desarrollo de videojuegos.",
-    tags: [{ name: "Unity", icon: FaUnity }, { name: "C#" }],
+    tags: [
+      { name: "Unity", icon: FaUnity },
+      { name: "C#", icon: null },
+    ],
     imageUrl: plataformas,
   },
 ] as const;
