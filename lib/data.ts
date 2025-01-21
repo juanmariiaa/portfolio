@@ -1,4 +1,4 @@
-import plataformas from "@/public/picture.jpeg";
+import plataformas from "@/public/plataformas.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaJava, FaUnity } from "react-icons/fa";
@@ -32,12 +32,12 @@ export const links = [
     hash: "#proyectos",
   },
   {
-    name: "Tecnologías",
-    hash: "#tecnologias",
-  },
-  {
     name: "Experiencia",
     hash: "#experiencia",
+  },
+  {
+    name: "Tecnologías",
+    hash: "#tecnologias",
   },
   {
     name: "Contacto",

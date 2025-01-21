@@ -4,6 +4,7 @@
 
 html {
   --line-color: #dedede;
+  background: linear-gradient(to bottom, #344955, #35374b);
 }
 
 .content-box {
