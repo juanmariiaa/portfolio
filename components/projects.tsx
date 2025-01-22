@@ -22,9 +22,9 @@ export default function Projects() {
     <section
       ref={ref}
       id="proyectos"
-      className="mb-28 max-w-screen-md text-left leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
+      className="mb-28 max-w-screen-md text-left  leading-8 sm:mb-40 scroll-mt-28 mx-5 sm:mx-0"
     >
-      <h2 className="text-3xl text-left mt- font-medium mb-3">Proyectos</h2>
+      <h2 className="text-3xl text-left font-medium mb-3">Proyectos</h2>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
@@ -48,7 +48,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
     >
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
+        <p className="mt-2 leading-relaxed text-white ">{description}</p>
         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
           {tags.map((tag, index) => {
             const IconComponent = tag.icon;
