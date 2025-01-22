@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio personal, creado con. Este sitio muestra mis **proyectos**, **experiencia**, **CV** y una sección de **contacto**.
 
-![Vista previa del portafolio](/imagen.png)
+![Vista previa del portafolio](public/preview.png)
 
 ## 🚀 Tecnologías utilizadas
 
