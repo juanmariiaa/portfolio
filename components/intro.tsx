@@ -80,9 +80,9 @@ export default function Intro() {
           >
             <div className="sm:flex sm:flex-row">
               <Link
-                href="#contact"
+                href="#contacto"
                 className="bg-gray-900 text-white px-7 py-3 mb-1 sm:mb-0 sm:mr-1.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                onClick={() => {}}
+                onClick={() => { }}
               >
                 Contáctame aquí{" "}
                 <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
