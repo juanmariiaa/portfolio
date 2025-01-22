@@ -1,4 +1,5 @@
 "use client";
+import { sendEmail } from "@/actions/sendEmail";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import React, { useEffect } from "react";
 import { TbSend } from "react-icons/tb";
@@ -27,9 +28,15 @@ export default function Contact() {
         Contáctame a este email: arizaserranojuanmaria@gmail.com o si prefieres
         rellena este formulario.
       </p>
-      <form className="flex flex-col gap-4 mt-4">
+      <form
+        className="flex flex-col gap-4 mt-4"
+        action={async (formData) => {
+          await sendEmail(formData);
+        }}
+      >
         <input
           className="rounded-xl border-gray-300 p-2 bg-white bg-opacity-10"
+          name="senderEmail"
           type="email"
           required
           maxLength={500}
@@ -38,6 +45,7 @@ export default function Contact() {
         <textarea
           className="rounded-xl border-gray-300 p-2 resize-none bg-white bg-opacity-10 h-36 placeholder-margin-left"
           placeholder="Escribe tu mensaje aquí"
+          name="message"
           required
           maxLength={500}
         ></textarea>
