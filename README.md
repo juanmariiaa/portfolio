@@ -1,6 +1,8 @@
-# Portafolio Personal | Juan María 🌟
+# Portfolio Personal | Juan María
 
 Bienvenido a mi portafolio personal, creado con. Este sitio muestra mis **proyectos**, **experiencia**, **CV** y una sección de **contacto**.
+
+![Vista previa del portafolio](public/imagen.png)
 
 ## 🚀 Tecnologías utilizadas
 
