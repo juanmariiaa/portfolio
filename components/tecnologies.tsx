@@ -44,7 +44,7 @@ export default function Tecnologies() {
           const IconComponent = skill.icon;
           return (
             <motion.li
-              className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 flex items-center space-x-2"
+              className=" borderBlack rounded-xl px-5 py-3 bg-white/10 text-white/80 flex items-center space-x-2"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
