@@ -1,4 +1,5 @@
 import plataformas from "@/public/plataformas.png";
+import chat from "@/public/chat.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaJava, FaUnity } from "react-icons/fa";
@@ -55,6 +56,16 @@ export const projectsData = [
       { name: "C#", icon: null },
     ],
     imageUrl: plataformas,
+  },
+  {
+    title: "Chat XML",
+    description:
+      "Chat offline desarrollado en Java con interfaz gráfica. Permite a los usuarios comunicarse localmente. Los datos de las conversaciones y usuarios se almacenan en archivos XML. Con este proyecto aprendí sobre todo manejo de datos en XML.",
+    tags: [
+      { name: "Java", icon: FaJava },
+      { name: "XML", icon: null },
+    ],
+    imageUrl: chat,
   },
 ] as const;
 
