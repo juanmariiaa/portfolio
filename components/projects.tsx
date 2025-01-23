@@ -60,12 +60,12 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
         </ul>
       </div>
 
-      <div className="relative sm:flex sm:items-center sm:justify-center sm:p-6">
+      <div className="relative sm:flex sm:items-center sm:justify-center sm:p-6 sm:w-[50%]">
         <Image
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="rounded-t-lg shadow-2xl sm:rounded-l-none sm:rounded-r-lg"
+          className="rounded-lg shadow-2xl"
         />
       </div>
     </section>
