@@ -1,8 +1,10 @@
 # Portfolio Personal | Juan María
 
-Bienvenido a mi portafolio personal, creado con. Este sitio muestra mis **proyectos**, **experiencia**, **CV** y una sección de **contacto**.
+Bienvenido a mi portafolio personal. Este sitio muestra mis **proyectos**, **experiencia**, **CV** y una sección de **contacto**.
 
-![Vista previa del portafolio](public/imagen.png)
+<div align="center">
+  <img src="/public/preview.png" alt="Mi foto o avatar" width="500" height=auto />
+</div>
 
 ## 🚀 Tecnologías utilizadas
 
